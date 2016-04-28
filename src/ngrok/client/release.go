@@ -5,7 +5,10 @@ package client
 import "net"
 
 var (
-	rootCrtPaths = []string{"assets/client/tls/ngrokroot.crt"}
+	rootCrtPaths = []string{"assets/client/tls/ngrokroot.crt",
+		"assets/client/tls/letsencrypt.crt",
+		"assets/client/tls/startcom.crt",
+	}
 )
 
 // server name in release builds is the host part of the server address
