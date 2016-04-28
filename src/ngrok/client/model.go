@@ -21,8 +21,8 @@ import (
 )
 
 const (
-	defaultServerAddr   = "ngrokd.ngrok.com:443"
-	defaultInspectAddr  = "127.0.0.1:4040"
+	defaultServerAddr   = "tunnel.neocastnetworks.com:443"
+	defaultInspectAddr  = "disabled"
 	pingInterval        = 20 * time.Second
 	maxPongLatency      = 15 * time.Second
 	updateCheckInterval = 6 * time.Hour
