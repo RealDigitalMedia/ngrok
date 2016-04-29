@@ -1,0 +1,12 @@
+server_addr: localhost:4443
+#server_addr: 192.168.25.142:4443
+#server_addr: 192.168.25.142.xip.io:4443
+#server_addr: tunnel.neocastnetworks.com:4443
+
+#server_addr: tunnel.neocastnetworks.com:443
+auth_token: 0123456789abcdefghijklmnopqrstuvwxyz
+
+tunnels:
+  ssh:
+    proto:
+      tcp: 22
