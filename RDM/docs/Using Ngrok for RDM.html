@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css">html,body{color:black}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:subpixel-antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}body{background-color:#fff;padding:30px;margin:15px;font-size:14px;line-height:1.6}body>*:first-child{margin-top:0!important}body>*:last-child{margin-bottom:0!important}@media screen{body{box-shadow:0 0 0 1px #cacaca,0 0 0 4px #eee}}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:subpixel-antialiased;cursor:text}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px;color:#333}h4{font-size:16px;color:#333}h5{font-size:14px;color:#333}h6{color:#777;font-size:14px}p,blockquote,table,pre{margin:15px 0}ul{padding-left:30px}ol{padding-left:30px}ol li ul:first-of-type{margin-top:0}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0}body>h2:first-child{margin-top:0;padding-top:0}body>h1:first-child{margin-top:0;padding-top:0}body>h1:first-child+h2{margin-top:0;padding-top:0}body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #ddd;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold;border:1px solid #ccc;padding:6px 13px}table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;font-family:Consolas,'Liberation Mono',Courier,monospace;font-size:12px;color:#333}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}.highlight pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}body{background:#fff;border:0}code{background-color:#fff;color:#333!important;padding:0 .2em;border:1px solid #dedede}pre{background:#fff}pre code{background-color:#fff!important;overflow:visible}}@media screen{body.inverted{color:#eee!important;border-color:#555;box-shadow:none}.inverted body,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#444!important;border-color:#111}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted body{background:#252a2a}.inverted a{color:#acd1d5}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne,.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#a31515}</style>
+
+	<meta charset="utf-8"/>
+	<title>Using Ngrok for RDM</title>
+	<meta name="author" content="Harvey Chapman &lt;hchapman@realdigitalmedia.com&gt;"/>
+	<meta name="date" content="May 2nd, 2016"/>
+</head>
+<body>
+
+<h1 id="title">Using Ngrok for RDM</h1>
+
+<p>Harvey Chapman <hchapman@realdigitalmedia.com> &lt;<a href="mailto:hchapman@realdigitalmedia.com">hchapman@realdigitalmedia.com</a>&gt;<br/>
+May 2nd, 2016 </p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Ngrok is a tool for tunneling internet connections through NATed firewalls. RDM uses it to connect to an SSH server running locally on a player.</p>
+
+<h3 id="ngrokdocumentation">Ngrok Documentation</h3>
+
+<p>Ngrok usage is fairly well documented, but the implementation, building, and deployment are not. It may be helpful to browse the official Ngrok documentation before continuing with this document.</p>
+
+<ul>
+<li><a href="https://github.com/inconshreveable/ngrok/blob/master/README.md">README.md</a></li>
+<li><a href="https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md">docs/DEVELOPMENT.md</a></li>
+<li><a href="https://github.com/inconshreveable/ngrok/blob/master/docs/SELFHOSTING.md">docs/SELFHOSTING.md</a></li>
+<li><a href="https://ngrok.com/">ngrok.com</a></li>
+</ul>
+
+<h2 id="howitworks">How It Works</h2>
+
+<h3 id="inpictures">In Pictures</h3>
+
+<h4 id="design">Design</h4>
+
+<figure>
+<img src="Ngrok_Design.png" alt="" />
+</figure>
+
+<h4 id="sequence">Sequence</h4>
+
+<figure>
+<img src="Ngrok_Sequence.png" alt="" />
+</figure>
+
+<h3 id="intext">In Text</h3>
+
+<p>Roughly, on start-up&#8230;</p>
+
+<ul>
+<li>ngrok (client) connects and sends an Auth message to ngrokd (server). This is called the Control connection.</li>
+<li>ngrokd replies with an AuthResp message</li>
+<li>ngrok sends one ReqTunnel message per desired tunnel</li>
+<li>ngrokd creates and returns a NewTunnel message for each</li>
+<li>ngrokd creates listening sockets using random port numbers for each tunnel</li>
+</ul>
+
+<p>Later, an incoming connection to one of the listening ports triggers the following&#8230;</p>
+
+<ul>
+<li>ngrokd sends a ReqProxy message to ngrok over the control connection.</li>
+<li>ngrok creates a new connection to ngrokd and sends a RegProxy message so ngrokd will know how to link the two connections. This is called the Proxy connection.</li>
+<li>ngrokd sends a StartProxy message over the proxy connection.</li>
+<li>ngrokd immediately starts forwarding data from the incoming connection through the proxy connection.</li>
+<li>ngrok makes a local connection to the tunneled port and immediately begins sending data back and forth between the local connection and the proxy connection.</li>
+</ul>
+
+<h2 id="howtobuild">How to Build</h2>
+
+<p>On OS X, install go with homebrew. To build local binaries, run <code>make all</code> or <code>make release-all</code> for debug or release versions. To build for other architectures, use this command <code>GOOS=linux GOARCH=amd64 make release-all</code>. For 32-bit machines, use <code>386</code>. Binaries are left in the bin folder. Architecture specific builds are in subdirectories named like &#8220;linux-amd64&#8221;.</p>
+
+<h2 id="howtoinstallrun">How to Install/Run</h2>
+
+<h3 id="server">Server</h3>
+
+<p>Copy the correct ngrokd binary for the server architecture along with <code>server.sh</code> to the server. On the server, ensure that the following files exist:</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">filename</th>
+	<th style="text-align:left;">description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">ngrokd</td>
+	<td style="text-align:left;">the server binary</td>
+</tr>
+<tr>
+	<td style="text-align:left;">server.sh</td>
+	<td style="text-align:left;">helpful start-up script</td>
+</tr>
+<tr>
+	<td style="text-align:left;">server.key</td>
+	<td style="text-align:left;">the server&#8217;s private key</td>
+</tr>
+<tr>
+	<td style="text-align:left;">server.crt</td>
+	<td style="text-align:left;">the servers&#8217;s full-chain certificate</td>
+</tr>
+<tr>
+	<td style="text-align:left;">ngrok_authtokens.txt</td>
+	<td style="text-align:left;">White space (including newlines) separated list of valid client authentication tokens. If this file doesn&#8217;t exist or is empty, all connections will be refused.</td>
+</tr>
+</tbody>
+</table>
+
+<p>The server private key and certificate files as well as the <code>ngrok_authtokens.txt</code> file can be symbolic links to the real files.
+Run the server with <code>./server.sh</code>. By default all logging is written to <code>ngrokd.log</code> in the current directory. The log is automatically rotated by ngrokd.</p>
+
+<h3 id="client">Client</h3>
+
+<p>This topic will be covered fully in a <em>How to Test</em> section in this document. The simplest method is the following command which connects to the server using <code>AUTH_TOKEN</code> and creates a tunnel to a local SSH (tcp port 22) server.</p>
+
+<p><code>./ngrok -authtoken AUTH_TOKEN -proto tcp 22</code></p>
+
+<p>Notice that the server name is not given because it is hardcoded into the ngrok client binary.</p>
+
+<h2 id="howtotest">How to Test</h2>
+
+<p>Ngrok is not difficult to test. Remember when testing on the server that everything runs out of a single directory. So it&#8217;s possible to test a server in a test directory on a different port (from production&#8217;s 443) while continuing to run the current production server.</p>
+
+<h3 id="debugvsrelease">Debug vs Release</h3>
+
+<p>The main difference between the debug and release binaries is with SSL encryption. The debug client trusts an additional fake &#8220;Snake Oil&#8221; CA, certificate authority, while the release client only trusts ngrok.com. For RDM&#8217;s use, two additional CA certificates have been added for Let&#8217;s Encrypt and StartCom, two free trusted certificate authorities. Instructions for creating certificates from them are detailed in the &#8220;Creating SSL Certificates&#8221; document.</p>
+
+<p>The server does not have any differences between debug and release versions. However, if you don&#8217;t give the server a private key and certificate to use, it will use the fake &#8220;Snake Oil&#8221; key and certificate contained in the binary.</p>
+
+<h3 id="testorder">Test Order</h3>
+
+<p>It&#8217;s recommended to test in this order:</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Client</th>
+	<th style="text-align:left;">Server</th>
+	<th style="text-align:left;">SSL Files</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">debug,local</td>
+	<td style="text-align:left;">debug,local</td>
+	<td style="text-align:left;">no</td>
+</tr>
+<tr>
+	<td style="text-align:left;">debug,local</td>
+	<td style="text-align:left;">debug,remote</td>
+	<td style="text-align:left;">no</td>
+</tr>
+<tr>
+	<td style="text-align:left;">debug,local</td>
+	<td style="text-align:left;">release,remote</td>
+	<td style="text-align:left;">yes</td>
+</tr>
+<tr>
+	<td style="text-align:left;">release,local</td>
+	<td style="text-align:left;">release,remote</td>
+	<td style="text-align:left;">yes</td>
+</tr>
+<tr>
+	<td style="text-align:left;">release,player</td>
+	<td style="text-align:left;">release,remote</td>
+	<td style="text-align:left;">yes</td>
+</tr>
+</tbody>
+</table>
+
+<dl>
+<dt>debug</dt>
+<dd><code>make all</code>, <code>make client</code></dd>
+
+<dt>release</dt>
+<dd><code>make release-all</code>, <code>make release-client</code>, <code>make release-server</code></dd>
+
+<dt>local</dt>
+<dd>the build machine</dd>
+
+<dt>remote</dt>
+<dd>the server, tunnel.neocastnetworks.com.</dd>
+</dl>
+
+<ul>
+<li>When testing, change the port from 443 to 4443 so it will not interfere with the current production ngrokd. Also, comment out the <code>-log=ngrokd.log</code> option.</li>
+<li>Remember to use the <code>GOOS=linux GOARCH=amd64</code> environment variables to build the server binary. <code>GOOS=linux GOARCH=amd64 make release-server</code></li>
+</ul>
+
+<dl>
+<dt>SSL Files</dt>
+<dd>&#8220;No&#8221; means commenting out the <code>-tls*</code> options in server.sh.</dd>
+</dl>
+
+<h3 id="client">Client</h3>
+
+<p>There&#8217;s a <code>client.sh</code> file and a <code>config.ml</code> file in the <code>RDM</code> directory already setup for testing. The default client configuration has been changed to suit RDM and has been compiled into the client.</p>
+
+<h4 id="client.sh">client.sh</h4>
+
+<pre><code>../bin/ngrok \
+    -log-level=DEBUG \
+    -log=stdout \
+    -config=config.yml \
+    &quot;$@&quot;
+</code></pre>
+
+<p>It&#8217;s best to send the output to stdout for testing.</p>
+
+<h4 id="config.yml">config.yml</h4>
+
+<pre><code>server_addr: localhost:4443
+#server_addr: 192.168.25.142:4443
+#server_addr: 192.168.25.142.xip.io:4443
+#server_addr: tunnel.neocastnetworks.com:4443
+
+#server_addr: tunnel.neocastnetworks.com:443
+auth_token: 0123456789abcdefghijklmnopqrstuvwxyz
+
+tunnels:
+  ssh:
+    proto:
+      tcp: 22
+</code></pre>
+
+<p>A YAML-formatted config<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> file can specify everything the client needs including the server address, authentication token, and tunnel definitions. Here, the config file is setup to test via localhost, an IP address, a DNS name that resolves to the same IP address, the test port (4443) on the server, and the actual production port (443) on the server. </p>
+
+<p>Tunnels may be defined as shown in the file. The tunnel name, <code>ssh</code> above is an arbitrary name. Multiple tunnels may exist in the config file, but only one may be given on the command line.</p>
+
+<p>To run with tunnels defined in the config file, use <code>./client.sh start ssh</code> or <code>./client.sh start-all</code>. </p>
+
+<p>If you only have one tunnel, you can use the command line by itself:</p>
+
+<pre><code>ngrok [Logging options] -authtoken 0123456789abcdefghijklmnopqrstuvwxyz \
+    -proto tcp 22
+</code></pre>
+
+<p>The default server address is tunnel.neocastnetworks.com:443 and is compiled into the client.</p>
+
+<h3 id="server">Server</h3>
+
+<p>The server is easiest to run when using the provided <code>server.sh</code> shell script.</p>
+
+<h4 id="server.sh">server.sh</h4>
+
+<p>This script makes it easier to run the server for testing and for release. By default, the server logs at a DEBUG level, uses the fake Snake Oil private key/certificate files, and listens on &#8220;:4443&#8221;. It also listens for HTTP and HTTPS connections. Ngrok was written to help web developers. Since RDM doesn&#8217;t need this, those are disabled with <code>-httpAddr=&quot;&quot;</code> and <code>-httpsAddr=&quot;&quot;</code>. The <code>-domain</code> setting is used by ngrokd when generating tunnel URLs, e.g. DOMAIN=acme.com results in tcp://acme.com:PORT.</p>
+
+<pre><code>if [ &quot;$(hostname)&quot; == &quot;tunnel&quot; ]; then
+    DOMAIN=tunnel.neocastnetworks.com
+    EXTRA_ARGS=&quot;-tunnelAddr=:443 \
+                -tlsCrt=server.crt \
+                -tlsKey=server.key \
+                -log-level=INFO \
+                -log=ngrokd.log&quot;
+    NGROKD=&quot;./ngrokd&quot;
+else
+    if [ &quot;$DOMAIN&quot; == &quot;&quot; ]; then
+        DOMAIN=localhost
+    fi
+    EXTRA_ARGS=&quot;&quot;
+    NGROKD=&quot;../bin/ngrokd&quot;
+fi
+
+${NGROKD} \
+    -httpAddr=&quot;&quot; \
+    -httpsAddr=&quot;&quot; \
+    -domain=${DOMAIN} \
+    -authTokens=&quot;ngrok_authtokens.txt&quot; \
+    ${EXTRA_ARGS} \
+    &quot;$@&quot;
+</code></pre>
+
+<h4 id="ngrok_authtokens.txt">ngrok_authtokens.txt</h4>
+
+<p>If provided via the command line, ngrokd will only allow connections from clients with valid authentication tokens provided from a given text file.</p>
+
+<pre><code>0123456789abcdefghijklmnopqrstuvwxyz
+</code></pre>
+
+<p>The file is white-space delimited including newlines, so do not put spaces inside of tokens. Also, there&#8217;s no support for quoting or escapes. Putting one token per line is good format.</p>
+
+<h4 id="server.key">server.key</h4>
+
+<p>The private key for the server. See the &#8220;Creating SSL Certificates&#8221; document for more information.</p>
+
+<h4 id="server.crt">server.crt</h4>
+
+<p>The full chain certificate for the server. See the &#8220;Creating SSL Certificates&#8221; document for more information.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Some documentation of the config file is found at <a href="https://ngrok.com/docs#upgrade-config">https://ngrok.com/docs#upgrade-config</a>. Look for the &#8220;OLD config&#8221; formatting. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>
