@@ -142,7 +142,7 @@ It's best to send the output to stdout for testing.
 
 #### config.yml ####
 
-```
+```yaml
 server_addr: localhost:4443
 #server_addr: 192.168.25.142:4443
 #server_addr: 192.168.25.142.xip.io:4443

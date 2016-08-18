@@ -87,7 +87,7 @@ StartCom is another slightly older free service for creating SSL certificates. I
 		Using the technique at [http://stackoverflow.com/a/27931596/47078](), create a config file, `tunnel-neocastnetworks-com.conf` based on the one provided in that StackOverflow answer and only change the DNS.1-4 entries at the bottom. Use however many you need (only DNS.1 for tunnel.neocastnetworks.com) and comment out the rest. Now, run the following command to create the request.
 
 	```
-	openssl req -config tunnel-neocastnetworks-com.conf \
+	openssl req -batch -config tunnel-neocastnetworks-com.conf \
 		-new -sha256 -newkey rsa:2048 -nodes -days 1825 \
 		-keyout tunnel-neocastnetworks-com.key.pem \
 		-out tunnel-neocastnetworks-com.req.pem
